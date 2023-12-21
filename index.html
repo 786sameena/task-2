@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple web page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1 class="title">To-Do List</h1>
+    <div class="container">
+        <h2 class="title-2">Tasks to be added</h2>
+        <div class="input">
+            <input class="text-input" type="text" placeholder="enter your content">
+            <button class="save-button" onclick="addItem()">Add to List</button>
+
+        </div>
+        <div class="filter-container">
+            <label><input type="radio" name="filter" value="all" checked onclick="filterItems('all')"> All</label>
+            <label><input type="radio" name="filter" value="completed" onclick="filterItems('completed')"> Completed</label>
+            <label><input type="radio" name="filter" value="notcompleted" onclick="filterItems('notcompleted')"> Not Completed</label>
+        </div>
+    </div>
+
+    <!-- New container for displaying items -->
+    <div class="display-container">
+        <h2 class="title-2">Displaying Tasks</h2>
+        <!-- Radio buttons for filtering -->
+      
+        <ul class="displayed-items-container"></ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

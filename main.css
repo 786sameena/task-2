@@ -1,0 +1,184 @@
+body{
+    background-image: url("https://th.bing.com/th?id=OIP.1eQ_bvYIIMdEnmcjvJPOegHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.container {
+    background-color: white;
+    width: 40%;
+    margin: auto; /* Center the container horizontally */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+
+.title{
+font-size: 34pt;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top:5%;
+color:black;
+}
+
+.input {
+    display: flex; /* Display as a flex container */
+    flex-direction: row; /* Layout children in a row */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-wrap: wrap; /* Allow content to wrap to the next line if needed */
+    width: 100%;
+    max-width: 600px; /* Limit the input section width */
+    margin: auto; /* Center the input section within the container */
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+.text-input {
+    box-sizing: border-box; 
+    position: relative;
+    flex:1;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid plum;
+    font-size: 16px;
+     /* Add some space between the input field and the button */
+}
+
+.title-2 {
+    font-size: 20pt;
+    color: plum;
+    margin-bottom: 10px; /* Add some space between the title-2 and the input fields */
+}
+
+.save-button {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: plum;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box; 
+    margin-left: 15px;
+}
+
+.save-button:hover {
+    background-color: purple;
+  }
+
+  /* .items-container {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.items-container li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: disc; /* Use disc as the bullet point style */
+    /* background-color: #f5f5f5;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 2px;
+} */ 
+
+/* Style for the "Done" and "Edit" buttons */
+.displayed-items-container li button {
+    padding: 8px;
+    margin-left: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.displayed-items-container li button:hover {
+    background-color: #ddd;
+}
+
+.displayed-items-container li button.done {
+    background-color: green;
+    color: white;
+    
+}
+
+.displayed-items-container li button.edit {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    gap: 8px;
+}
+
+/* Add a margin to the button container for spacing */
+
+.displayed-items-container li button.delete {
+    background-color: red;
+    color: white;
+}
+
+
+/* Your existing styles */
+
+/* Style for the display container */
+.display-container {
+    background-color: white; /* Light gray background */
+    width: 40%;
+    margin: auto; /* Center the container horizontally */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    margin-top: 20px; /* Add some space between the input container and display container */
+}
+
+.displayed-items-container {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+
+
+.displayed-items-container li {
+    background-color:#f5f5f5; /* Slightly darker background for list items */
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+}
+
+.displayed-items-container li span {
+    font-size: 15px;
+}
+
+/* Add more styles as needed */
+
+
+/* Add styles for the filter container */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: auto;
+}
+
+.filter-container label {
+    margin-right: 25px;
+    font-size: 20px;
+    color: plum;
+}
+
+/* Add some space between the input container and display container */
+.display-container {
+    margin-top: 20px;
+}
