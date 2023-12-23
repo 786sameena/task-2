@@ -15,13 +15,20 @@ function addItem() {
         itemsArray[editedItem.index].editing = false; // Set editing to false after saving
         editedItem = null;
     } else {
-        itemsArray.push({ content: inputValue, completed: false, editing: false });
+        let newItem = { content: inputValue, completed: false, editing: false };
+        itemsArray.push(newItem);
     }
 
     inputElement.value = '';
-    displayItems();
+
+    // Get the current filter and update the display accordingly
+    let activeFilter = document.querySelector('input[name="filter"]:checked').value;
+    displayItems(activeFilter);
+
     updateAddToListButtonText();
 }
+
+
 
 
 function handleDone(index) {
